@@ -1,12 +1,31 @@
 # VENVMAN
 
 Python virtual environment manager.
+A simple bash script that can be used to manage python venv environments simply and centrally, Its not a replacement of anaconda , mamba , poetry etc. , It just uses the built in python venv and runs if you are using linux based system or bash, altough if anyone is eager  to help bring support on .zsh or windows open a PR :)
 
+### What it *is*:
+- A lightweight wrapper around Python's built-in `venv`.
+- Stores all your virtual environments under `~/.venvs`.
+- Lets you manage environments with simple commands like:
+  - `venvman create <name>`
+  - `venvman activate <name>`
+  - `venvman delete <name>`
+  - `venvman list`
+- Easy to install and remove — no dependencies, no magic.
 
+---
+
+### What it *is not*:
+- It’s **not** a dependency manager like Poetry or Pipenv.
+- It’s **not** a data science platform like Anaconda or Mamba.
+- It doesn’t handle `requirements.txt`, `pyproject.toml`, or install packages for you.
+- It doesn’t manage Python versions — it just uses the default `python3` on your system.
+
+---
 
 ## Installation
 
-1. Clone or download the venvman files
+1. Clone the repo or download the venvman files
 2. Run the setup script:
 
 ```bash
